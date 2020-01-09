@@ -9,12 +9,17 @@ public class CardTest {
 
     @Before
     public void before() {
-        card = new Card(SuitType.CLUBS);
+        card = new Card(SuitType.CLUBS, CardValueType.TEN);
     }
 
     @Test
     public void hasSuit() {
         assertEquals(SuitType.CLUBS, card.getSuit());
+    }
+
+    @Test
+    public void hasValue() {
+        assertEquals(CardValueType.TEN, card.getCardValue());
     }
 
 
