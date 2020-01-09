@@ -20,13 +20,23 @@ public class Game {
             player.addCard(deck.getFirstCard());
         }
     }
-//
+
+    public Player calculateWinner() {
+        Player winner = this.players.get(0);
+        for (int i = 1; i < this.players.size(); i++) {
+            if (this.players.get(i).getScore() > winner.getScore()) {
+                winner = this.players.get(i);
+            }
+        }
+        return winner;
+    }
+
 //    public Player calculateWinner() {
-//        Player winner;
-//        for (Player player : this.players) {
-//            player.
-//        }
-
-
+//        ArrayList<Player> sortedPlayers = this.players;
+//        sortedPlayers.sort()
+//
+//
+//    }
+//
 }
 

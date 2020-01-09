@@ -39,14 +39,14 @@ public class GameTest {
         assertEquals(1, player2.handCardCount());
     }
 
-//    @Test
-//    public void canDetermineCorrectWinner() {
-//        Card card1 = new Card(SuitType.HEARTS, CardValueType.KING);
-//        Card card2 = new Card(SuitType.HEARTS, CardValueType.THREE);
-//        game.addPlayer(player1);
-//        game.addPlayer(player2);
-//        player1.addCard(card1);
-//        player2.addCard(card2);
-//        assertEquals(player1, game.calculateWinner());
-//    }
+    @Test
+    public void canDetermineCorrectWinner() {
+        Card card1 = new Card(SuitType.HEARTS, CardValueType.KING);
+        Card card2 = new Card(SuitType.HEARTS, CardValueType.THREE);
+        game.addPlayer(player1);
+        game.addPlayer(player2);
+        player1.addCard(card1);
+        player2.addCard(card2);
+        assertEquals(player1, game.calculateWinner());
+    }
 }
