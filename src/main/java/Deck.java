@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.BitSet;
+import java.util.*;
 
 public class Deck {
     private ArrayList<Card> cards;
@@ -22,4 +20,11 @@ public class Deck {
         }
     }
 
+    public Card getFirstCard() {
+        return this.cards.get(0);
+    }
+
+    public void shuffleDeck() {
+        Collections.shuffle(this.cards);
+    }
 }
