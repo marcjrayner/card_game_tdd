@@ -34,4 +34,12 @@ public class DeckTest {
         assertTrue(card1 != card2);
     }
 
+    @Test
+    public void canDealCard() {
+        deck.populateDeck();
+        deck.shuffleDeck();
+        assertTrue(deck.getFirstCard().getClass() == Card.class);
+    }
+
+
 }
