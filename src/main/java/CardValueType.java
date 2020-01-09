@@ -13,10 +13,13 @@ public enum CardValueType {
     QUEEN(10),
     KING(10);
 
-    private final int value;
+    private final int score;
 
-    CardValueType(int value) {
-        this.value = value;
+    CardValueType(int score) {
+        this.score = score;
     }
 
+    public int getScore() {
+        return this.score;
+    }
 }

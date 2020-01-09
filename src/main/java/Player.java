@@ -15,4 +15,8 @@ public class Player {
     public void addCard(Card card) {
         this.hand.add(card);
     }
+
+    public int getScore() {
+        return this.hand.get(0).getCardValue().getScore();
+    }
 }

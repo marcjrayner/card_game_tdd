@@ -20,5 +20,13 @@ public class Game {
             player.addCard(deck.getFirstCard());
         }
     }
+//
+//    public Player calculateWinner() {
+//        Player winner;
+//        for (Player player : this.players) {
+//            player.
+//        }
+
+
 }
 
