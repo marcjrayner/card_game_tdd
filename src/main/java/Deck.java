@@ -21,7 +21,7 @@ public class Deck {
     }
 
     public Card getFirstCard() {
-        return this.cards.get(0);
+        return this.cards.remove(0);
     }
 
     public void shuffleDeck() {

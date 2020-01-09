@@ -12,7 +12,6 @@ public class Player {
         return this.hand.size();
     }
 
-
     public void addCard(Card card) {
         this.hand.add(card);
     }
